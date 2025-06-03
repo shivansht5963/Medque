@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+section {
+    margin: 50px auto;
+    width: 201%;
+    max-width: 600px;
+    background-color: white;
+    padding: 189px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.appointment-form input, .appointment-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+/* new added */
+
+/* Doctor Information Section */
+#doctor-info {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#doctor-info h2 {
+    color: #3498db;
+    font-size: 2em;
+}
+
+#doctor-info p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6em;
+}
+
+.doctor-photo {
+    margin-top: 30px;
+}
+
+.doctor-photo img {
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #3498db;
+}
+
+/* Clinic Information Section */
+#clinic-info {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#clinic-info h2 {
+    color: #3498db;
+    font-size: 2em;
+}
+
+#clinic-info p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6em;
+}
+
+.clinic-photo {
+    margin-top: 30px;
+}
+
+.clinic-photo img {
+    height: 370px;
+    width: 570px;
+    border-radius: 10px;
+    border: 5px solid #3498db;
+}
+
+/* Services Section */
+#services {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#services h2 {
+    color: #3498db;
+    font-size: 2em;
+}
+
+.services-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8em;
+}
+
+.services-list li {
+    padding: 10px 0;
+}

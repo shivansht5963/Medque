@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Current Token Number</h1>
+        <!-- <nav>
+            <ul>
+                <li><a href="main.html">Doctor View</a></li>               
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="token.html">Token Display</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <section class="token-display">
+        <h2>Token Number: <span id="tokenNumber">5</span></h2>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Doctor Appointment System</p>
+    </footer>
+
+    <script>
+        // Simple JavaScript to simulate token number update
+        let token = 5;
+        setInterval(() => {
+            token++;
+            document.getElementById('tokenNumber').textContent = token;
+        }, 5000); // Update token every 5 seconds
+    </script>
+</body>
+</html>

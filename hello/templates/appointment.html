@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Registration Form</title>
+  <link rel="stylesheet" href="static/form.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="animate__animated animate__fadeInDown">Patient Registration</h1>
+    <form method="post" action="/form" id="registrationForm">
+      {% csrf_token %}
+      <div class="form-group animate__animated animate__fadeInUp">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstname" required>
+        <p class="error-message" id="firstNameError"></p>
+      </div>
+      <div class="form-group animate__animated animate__fadeInUp">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastname" required>
+        <p class="error-message" id="lastNameError"></p>
+      </div>
+      <div class="form-group animate__animated animate__fadeInUp">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+        <p class="error-message" id="phoneError"></p>
+      </div>
+      <!-- Token No. field -->
+      <div class="form-group animate__animated animate__fadeInUp">
+        <label for="tokenNo">Token No.</label>
+        <input type="text" id="tokenNo" name="tokenNo" required>
+        <p class="error-message" id="tokenNoError"></p>
+      </div>
+      <!-- Age field -->
+      <div class="form-group animate__animated animate__fadeInUp">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" required>
+        <p class="error-message" id="ageError"></p>
+      </div>
+      <!-- Disease Information field -->
+      <div class="form-group animate__animated animate__fadeInUp">
+        <label for="diseaseInfo">Disease Information</label>
+        <textarea id="diseaseInfo" name="diseaseInfo" required></textarea>
+        <p class="error-message" id="diseaseInfoError"></p>
+      </div>
+      <button type="submit" class="animate__animated animate__bounce">Register</button>
+    </form>
+  </div>
+  <script src="static/form.js"></script>
+</body>
+</html>
